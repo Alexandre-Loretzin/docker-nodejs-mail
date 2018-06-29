@@ -1,0 +1,17 @@
+version: "3.1"
+services:
+    node:
+      image: "node:8"
+      container_name: docker-nodejs-helloworld
+      user: "node"
+      working_dir: /application
+      environment:
+        - NODE_ENV=production
+      volumes:
+        - ./:/application
+      ports:
+        - "8000:8000"
+      command: >
+        bash -c "npm install express --save 
+        && npm install nodemailer --save
+        && npm start"
