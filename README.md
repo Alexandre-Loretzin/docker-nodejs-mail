@@ -8,6 +8,10 @@ Comme elle n'a pas précisé à quelle adresse email de destination elle veut re
 
 Nb : Le package nodemailer est préinstallé dans server.js
 
+## Documentation
+
+La seule documentation nécessaire est à cette adresse : https://community.nodemailer.com/
+
 ## Exercices bonus
 
 *Bonus 1* : Renvoyer une erreur si le format de l'email n'est pas bon.
