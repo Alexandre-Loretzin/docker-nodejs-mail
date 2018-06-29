@@ -19,7 +19,27 @@ app.post('/send-mail', (request, response) => {
     // Displays the form parameters in the web server terminal
     console.log(request.body);
 
-    // CODE HERE YOUR EMAIL SENDING FUNCTION
+    var nodemailer = require('nodemailer');
+
+    // create reusable transporter object using the default SMTP transport
+    var transporter = nodemailer.createTransport('smtps://845ba2291acc5b0d66153772b61c2fc1:65fb2a30bee428eec867c1e60df1ef40@in-v3.mailjet.com');
+
+    // setup e-mail data with unicode symbols
+    var mailOptions = {
+        from: '"Simplon" <simplonienn.e@mailtest.simplon-roanne.com>', // sender address
+        to: 'zzgael@gmail.com', // list of receivers
+        subject: 'Hello ✔', // Subject line
+        text: 'Hello world ?', // plaintext body
+        html: '<b>Hello world ?</b>' // html body
+    };
+
+    // send mail with defined transport object
+    transporter.sendMail(mailOptions, function(error, info) {
+        if (error) {
+            return console.log(error);
+        }
+        console.log('Message sent: ' + info.response);
+    });
 
     return response.send('Email maybe sent ! ( if you did your job )');
 })

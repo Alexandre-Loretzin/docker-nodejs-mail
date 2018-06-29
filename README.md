@@ -22,11 +22,13 @@ La seule documentation nécessaire est à cette adresse : https://community.node
 
 ## Exercices bonus
 
-*Bonus 1* : Renvoyer une erreur si le format de l'email n'est pas bon.
+*ExoBonus 1* : Renvoyer une erreur si le format de l'email n'est pas bon.
 
-*Bonus 2* : Ajouter un champ "Pièce-Jointe" sur le frontend et gérer l'envoi de la pièce jointe à l'email.
+*ExoBonus 2* : Ajouter un champ "Pièce-Jointe" sur le frontend et gérer l'envoi de la pièce jointe à l'email.
 
-*Bonus 3* : Styliser l'email avec du HTML et du CSS pour qu'il soit plus lisible et professionnel.
+*ExoBonus 3* : Styliser l'email avec du HTML et du CSS pour qu'il soit plus lisible et professionnel.
+
+*ExoBonus 4 ( Hard )* : Sauvegarder le nom et l'email en base de données ( de votre choix ).
 
 Quelques idées de recherches Google :
 - "How to validate an email address in JavaScript"
