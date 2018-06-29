@@ -8,6 +8,14 @@ Comme elle n'a pas précisé à quelle adresse email de destination elle veut re
 
 Nb : Le package nodemailer est préinstallé dans server.js
 
+## Démarrer le projet
+
+```bash
+git clone https://github.com/simplon-roanne/docker-nodejs-mail
+cd docker-nodejs-mail
+docker-compose up
+```
+
 ## Documentation
 
 La seule documentation nécessaire est à cette adresse : https://community.nodemailer.com/
