@@ -8,6 +8,8 @@ Comme elle n'a pas précisé à quelle adresse email de destination elle veut re
 
 Nb : Le package nodemailer est préinstallé dans server.js
 
+## Exercices bonus
+
 *Bonus 1* : Renvoyer une erreur si le format de l'email n'est pas bon.
 
 *Bonus 2* : Ajouter un champ "Pièce-Jointe" sur le frontend et gérer l'envoi de la pièce jointe à l'email.
