@@ -3,37 +3,59 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Hello World</title>
+    <title>Contact form - Simplon Roanne</title>
+
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-    <style>
-        body {
-            text-align: center;
-            font-family: 'Source Code Pro', monospace;
-        }
-        
-        .content img {
-            display: block;
-            margin: 30px auto;
-        }
-        
-        .footer {
-            margin-top: 50px;
-        }
-        
-        .footer img {
-            width: 75px;
-        }
-    </style>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 </head>
 
 <body>
-    <h1>Bien joué ! Tu as créé ton premier serveur web.</h1>
-    <div class="content">
-        <img src="https://media3.giphy.com/media/wZjlCH43M3M0U/giphy.gif">
-    </div>
 
-    <div class="footer">
-        <img src="https://simplon.co/wp-content/uploads/2018/04/logo-simplon_roanne.png">
+    <img width="400" src="https://image.freepik.com/free-vector/technology-company-logo-template_1061-20.jpg" style="margin: -104px auto -48px auto;display: block;">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="well well-sm">
+                    <form class="form-horizontal" action="/send-mail" method="post">
+                        <fieldset>
+                            <legend class="text-center">Contact us</legend>
+
+                            <!-- Name input-->
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="name">Name</label>
+                                <div class="col-md-9">
+                                    <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- Email input-->
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="email">Your E-mail</label>
+                                <div class="col-md-9">
+                                    <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- Message body -->
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="message">Your message</label>
+                                <div class="col-md-9">
+                                    <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Form actions -->
+                            <div class="form-group">
+                                <div class="col-md-12 text-right">
+                                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
